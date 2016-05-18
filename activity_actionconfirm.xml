@@ -1,0 +1,56 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    tools:context="${relativePackage}.${activityClass}" >
+
+    <TextView
+    android:id="@+id/alertTV"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_centerHorizontal="true"
+    android:layout_marginTop="54dp"
+    android:textColor="@color/confirm_text_color"
+    android:textSize="18dp" />
+    <TextView
+        android:id="@+id/alertTV2"
+        android:layout_below="@+id/alertTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/confirm_text_color"
+        android:textSize="18dp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/alertTV"
+        android:layout_marginTop="50dp"
+        android:orientation="horizontal"
+        >
+
+	    <TextView
+	        android:id="@+id/alertCancel"
+            android:layout_alignParentRight="true"
+    	    android:layout_width="wrap_content"
+    	    android:layout_height="wrap_content"
+            android:layout_marginRight="40dp"
+    	    android:text="@string/cancel"
+    	    android:textSize="18dp"
+    	    android:textColor="@drawable/text_color_press_selector"
+            android:layout_marginBottom="40dp"/>
+        
+        <TextView
+	        android:id="@+id/alertEnter"
+            android:layout_toLeftOf="@id/alertCancel"
+            android:layout_marginRight="60dp"
+    	    android:layout_width="wrap_content"
+    	    android:layout_height="wrap_content"
+    	    android:text="@string/enter"
+    	    android:textSize="18dp"
+            android:textColor="@drawable/text_color_press_selector"
+            android:layout_marginBottom="40dp"
+        	/>    
+        
+    </RelativeLayout>
+</RelativeLayout>
