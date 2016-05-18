@@ -1,0 +1,62 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/green_bg"
+    tools:context="${relativePackage}.${activityClass}" >
+
+    <TextView
+        android:id="@+id/bundleNotAllowed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="120dp"
+        android:textColor="@color/white"
+        android:text="@string/shoujihaomabangdingshibai"
+        android:textSize="20dp" />
+    
+    <TextView
+        android:id="@+id/detailInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/bundleNotAllowed"
+        android:layout_marginTop="80dp"
+        android:layout_marginStart="80dp"
+        android:layout_marginEnd="80dp"
+        android:textColor="@color/white"
+        android:text="@string/qingchangshichongxinbangdingshoujihaoruguoshoujihaomameiyoukaitongjiamitongxunyewu"
+        android:textSize="17dp" />
+    
+    <Button 
+        android:id="@+id/callBT"
+        android:layout_below="@id/detailInfo"
+        android:textColor="@color/white"
+        android:layout_centerHorizontal="true"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="110dp"
+        android:layout_marginRight="110dp"
+        android:layout_height="35dp"
+        android:background="@drawable/single_btn_selector"
+        android:layout_marginTop="30dp"
+        android:text="@string/boda10086zixun"
+        android:textSize="15dp"
+        />
+
+    <Button
+        android:id="@+id/finishButton"
+        android:layout_below="@id/callBT"
+        android:textColor="@color/white"
+        android:layout_centerHorizontal="true"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="110dp"
+        android:layout_marginRight="110dp"
+        android:layout_height="35dp"
+        android:background="@drawable/single_btn_selector"
+        android:layout_marginTop="30dp"
+        android:text="@string/wancheng"
+        android:visibility="visible"
+        android:textSize="15dp"
+        />
+
+</RelativeLayout>
